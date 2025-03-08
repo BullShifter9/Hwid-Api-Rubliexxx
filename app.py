@@ -26,7 +26,7 @@ def save_database(data):
 def capture_hwid():
     # Verify API key for security
     api_key = request.headers.get('Authorization')
-    if api_key != os.environ.get('f8a03e7fb6e29c4ba59f838e85b932b7'):
+    if api_key != os.environ.get('API_SECRET_KEY'):
         return jsonify({"status": "error", "message": "Unauthorized"}), 401
     
     # Process data
@@ -47,7 +47,7 @@ def capture_hwid():
 def get_all_hwids():
     # Verify API key
     api_key = request.headers.get('Authorization')
-    if api_key != os.environ.get('f8a03e7fb6e29c4ba59f838e85b932b7'):
+    if api_key != os.environ.get('API_SECRET_KEY'):
         return jsonify({"status": "error", "message": "Unauthorized"}), 401
     
     database = load_database()
