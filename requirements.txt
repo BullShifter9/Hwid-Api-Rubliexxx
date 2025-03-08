@@ -1,2 +1,2 @@
 Flask==2.0.1
-url_quote
+Werkzeug>=2.0.0
