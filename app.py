@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 # Configuration
 DATABASE_FILE = "hwid_database.json"
-API_KEY = os.environ.get("API_KEY", "your_default_api_key")  # Set this in Render environment variables
+API_KEY = os.environ.get("API_KEY", "Supernaturalshithappenonearthniggers90908080")  # Set this in Render environment variables
 
 # Database functions
 def load_database():
