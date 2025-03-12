@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Environment variables
-REPLIT_URL = os.environ.get("REPLIT_URL", "https://your-repl-name.your-username.repl.co")
+REPLIT_URL = os.environ.get("REPLIT_URL", "https://ccf11408-beea-454f-845b-1594c0f427af-00-3eu3dcqn0pks2.pike.replit.dev/")
 ADMIN_KEY = os.environ.get("ADMIN_KEY", "Supernaturalshithappenonearthniggers90908080")
 
 @app.route("/verify", methods=["POST"])
