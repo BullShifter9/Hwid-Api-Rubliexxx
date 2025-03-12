@@ -54,7 +54,7 @@ def manage_hwid():
         return jsonify({"success": False, "message": "Invalid request"}), 400
     
     # Simple admin key validation
-    admin_key = os.environ.get('ADMIN_KEY', 'your_default_admin_key')
+    admin_key = os.environ.get('ADMIN_KEY', 'Supernaturalshithappenonearthniggers90908080')
     if data['admin_key'] != admin_key:
         return jsonify({"success": False, "message": "Unauthorized access"}), 401
     
@@ -89,7 +89,7 @@ def list_hwids():
     if not data or 'admin_key' not in data:
         return jsonify({"success": False, "message": "Invalid request"}), 400
     
-    admin_key = os.environ.get('ADMIN_KEY', 'your_default_admin_key')
+    admin_key = os.environ.get('ADMIN_KEY', 'Supernaturalshithappenonearthniggers90908080')
     if data['admin_key'] != admin_key:
         return jsonify({"success": False, "message": "Unauthorized access"}), 401
     
